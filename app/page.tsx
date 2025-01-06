@@ -3,6 +3,8 @@ import styles from "./page.module.scss";
 import Header from './components/header';
 import Link from 'next/link';
 import CommunityCard from './components/cards/community-card';
+import { LIST_COMMUNITIES } from './data/communities';
+import { ICommunity } from './models/community.model';
 
 export default function Home() {
   return (
@@ -30,25 +32,11 @@ export default function Home() {
       </section>
       <main className={styles.communities}>
         <div className={styles.communities__list}>
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
-          <CommunityCard />
+          {
+            LIST_COMMUNITIES.map((community: ICommunity) => (
+              <CommunityCard key={community.name} community={community} />
+            ))
+          }
         </div>
       </main>
       {/* <Footer /> */}
