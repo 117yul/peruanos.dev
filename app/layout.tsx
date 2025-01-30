@@ -1,8 +1,9 @@
 ﻿import type { Metadata } from "next";
 import { Google_Sans } from "next/font/google";
 import "./globals.scss";
-import Header from './components/header/header';
+import Header from './components/Header/header';
 import { ThemeProvider } from './context/ThemeContext';
+import Footer from './components/Footer/footer';
 
 const GoogleSans = Google_Sans({
   variable: "--font-google-sans",
@@ -10,8 +11,8 @@ const GoogleSans = Google_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Peruanos.dev",
-  description: "Comunidad de desarrolladores peruanos",
+  title: "Inicio | peruanos.dev",
+  description: "Descubre eventos, únete a comunidades y contribuye a proyectos de código abierto realizados en Perú.",
 };
 
 export default function RootLayout({
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
