@@ -4,6 +4,7 @@ import "./globals.scss";
 import Header from './components/Header/header';
 import { ThemeProvider } from './context/ThemeContext';
 import Footer from './components/Footer/footer';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Inicio | peruanos.dev",
@@ -23,6 +24,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           {children}
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
