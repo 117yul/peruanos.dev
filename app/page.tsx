@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import styles from './page.module.scss';
 import CardEventHome from './components/card-event-home/card-event-home';
 import CardCommunityHome from './components/card-community-home/card-community-home';
@@ -6,6 +7,15 @@ import { COMMUNITIES } from './data/communities';
 import { ICommunity } from './models/community.model';
 import { EVENTS } from './data/events';
 import { IEvent } from './models/event.model';
+
+export const metadata: Metadata = {
+  title: 'Inicio',
+  description: 'Conecta con la comunidad tech en el Perú. Descubre eventos, únete a comunidades y contribuye a proyectos de código abierto realizados por peruanos.',
+  openGraph: {
+    title: 'Peruanos.dev - Comunidad Tech del Perú',
+    description: 'Conecta con la comunidad tech en el Perú. Descubre eventos, únete a comunidades y contribuye a proyectos de código abierto.',
+  },
+};
 
 export const dynamic = 'force-dynamic';
 

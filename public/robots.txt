@@ -1,0 +1,19 @@
+# Robots.txt para peruanos.dev
+# Permitir acceso a todos los bots de búsqueda
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://peruanos.dev/sitemap.xml
+
+# Bots específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Prevenir scraping agresivo
+Crawl-delay: 1
