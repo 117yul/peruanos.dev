@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+﻿import { Metadata } from 'next';
 import { GoogleSans } from './fonts';
 import "./globals.scss";
 import { ThemeProvider } from './context/ThemeContext';
