@@ -1,31 +1,58 @@
 ﻿@import url("tailwindcss");
 
 :root {
-  /* Colores primitivos (base) */
-  --color-white: #ffffff;
+  /* ============================================
+     COLORES PRIMITIVOS (Tokens base)
+     ============================================ */
+  --color-white: #FFFFFF;
   --color-black: #0F0F11;
   --color-red: #CD2B31;
-  --color-gray-light: #979797;
-  --color-gray-dark: #333333;
 
-  /* Colores semánticos (propósito) */
+  /* ============================================
+     TEMA LIGHT (Default)
+     ============================================ */
+
+  /* Fondos y textos principales */
   --color-background: var(--color-white);
   --color-foreground: var(--color-black);
-  --color-primary: var(--color-red);
-  --color-accent: var(--color-gray-light);
 
-  /* Estados opcionales */
-  --color-primary-hover: #a82228;
+  /* Colores de marca */
+  --color-primary: var(--color-red);
+  --color-primary-text: #C71F26;
+  /* Texto con contraste AA */
+  --color-primary-hover: #A82228;
+  /* Estado hover de botones primarios */
+
+  /* Colores de soporte */
+  --color-accent: #6B6B6B;
+  /* Textos secundarios con contraste AA */
+  --color-hover: #E8E8E8;
+  /* Fondo hover de elementos secundarios */
   --color-border: rgba(0, 0, 0, 0.1);
+  /* Bordes sutiles */
 
   /* Fuentes */
   --font-sans: var(--font-google-sans);
 }
 
 [data-theme='dark'] {
+  /* ============================================
+     TEMA DARK
+     ============================================ */
+
+  /* Fondos y textos principales */
   --color-background: var(--color-black);
   --color-foreground: var(--color-white);
-  --color-accent: var(--color-gray-dark);
+
+  /* Colores de marca */
+  --color-primary-text: #E54046;
+  /* Texto con contraste AA */
+
+  /* Colores de soporte */
+  --color-accent: #979797;
+  /* Textos secundarios con contraste AA */
+  --color-hover: #2A2A2D;
+  /* Fondo hover de elementos secundarios */
   --color-border: rgba(255, 255, 255, 0.1);
 }
 
