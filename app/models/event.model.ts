@@ -5,7 +5,7 @@ export interface IEvent {
     time: string;
     location: string;
     city: string;
-    type: 'presencial' | 'virtual' | 'híbrido';
+    type: 'Presencial' | 'Virtual' | 'Híbrido';
     image_url?: string;
     registration_url: string;
     tags: string[];
