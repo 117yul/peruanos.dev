@@ -10,6 +10,7 @@ import { EVENTS } from './data/events';
 import { IEvent } from './models/event.model';
 import { PROJECTS } from './data/projects';
 import { IGitHubRepo } from './models/project.model';
+import { Check, CircleCheck, Edit, GitFork, Github } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Inicio',
@@ -108,6 +109,74 @@ export default async function Home() {
         <Link className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-full hover:bg-[var(--color-primary-hover)] transition" href='/projects'>
           Ver todos los proyectos
         </Link>
+      </section>
+      <section className="py-10 sm:py-15 px-5 w-full flex flex-col items-center">
+        <h2 className="text-4xl sm:text-5xl text-center font-bold mb-4">¿Cómo <span className="text-[var(--color-primary-text)]">contribuir?</span></h2>
+        <p className="text-center w-full sm:w-[70%] text-[18px] text-[var(--color-accent)] mb-12">Este es un portal comunitario. Cualquiera puede agregar eventos, comunidades o proyectos mediante un Pull Request</p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-5xl mb-12">
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-2xl font-bold mb-4">1</div>
+            <Github className="w-8 h-8 mb-3 text-[var(--color-primary)]" />
+            <h3 className="font-bold text-lg mb-2">Fork el repositorio</h3>
+            <p className="text-sm text-[var(--color-accent)]">Haz fork del repositorio peruanos.dev en GitHub.</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-2xl font-bold mb-4">2</div>
+            <Edit className="w-8 h-8 mb-3 text-[var(--color-primary)]" />
+            <h3 className="font-bold text-lg mb-2">Edita el contenido</h3>
+            <p className="text-sm text-[var(--color-accent)]">Agrega tu evento, comunidad o proyecto en el archivo correspondiente.</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-2xl font-bold mb-4">3</div>
+            <GitFork className="w-8 h-8 mb-3 text-[var(--color-primary)]" />
+            <h3 className="font-bold text-lg mb-2">Envía un Pull Request</h3>
+            <p className="text-sm text-[var(--color-accent)]">Crea un pull request con tus cambios y una descripción clara.</p>
+          </div>
+
+          <div className="flex flex-col items-center text-center">
+            <div className="w-16 h-16 rounded-full bg-[var(--color-primary)] text-white flex items-center justify-center text-2xl font-bold mb-4">4</div>
+            <CircleCheck className="w-8 h-8 mb-3 text-[var(--color-primary)]" />
+            <h3 className="font-bold text-lg mb-2">¡Listo!</h3>
+            <p className="text-sm text-[var(--color-accent)]">La comunidad revisará y aprobará tu contribución.</p>
+          </div>
+        </div>
+
+        <div className="bg-[var(--color-background)] border border-[var(--color-accent)] rounded-lg p-8 w-full max-w-2xl">
+          <h3 className="font-bold text-xl mb-4">¿Qué puedes agregar?</h3>
+          <ul className="space-y-3 mb-6">
+            <li className="flex items-start gap-2">
+              <span className="text-[var(--color-primary)] font-bold">•</span>
+              <div>
+                <strong>Eventos:</strong> Meetups, conferencias, workshops, hackathons y cualquier evento tech en Perú.
+              </div>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[var(--color-primary)] font-bold">•</span>
+              <div>
+                <strong>Comunidades:</strong> Grupos de usuarios, comunidades tech, espacios de aprendizaje y networking.
+              </div>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[var(--color-primary)] font-bold">•</span>
+              <div>
+                <strong>Proyectos Open Source:</strong> Librerías, herramientas, aplicaciones creadas por desarrolladores peruanos.
+              </div>
+            </li>
+          </ul>
+          <div className="flex justify-center">
+            <Link
+              className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-full hover:bg-[var(--color-primary-hover)] transition"
+              href='https://github.com/lperezp/peruanos.dev'
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              Ir al repositorio
+            </Link>
+          </div>
+        </div>
       </section>
     </main>
   );
