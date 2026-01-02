@@ -23,12 +23,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.8,
         },
-        // Agregar más rutas aquí según se vayan creando
-        // {
-        //   url: `${baseUrl}/projects`,
-        //   lastModified: currentDate,
-        //   changeFrequency: 'weekly',
-        //   priority: 0.7,
-        // },
+        {
+            url: `${baseUrl}/projects`,
+            lastModified: currentDate,
+            changeFrequency: 'weekly',
+            priority: 0.7,
+        },
     ];
 }
