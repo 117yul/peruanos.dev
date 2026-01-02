@@ -46,13 +46,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: technologies
-    attributes:
-      label: Tecnologías principales
-      description: Lenguajes de programación o frameworks principales
-      placeholder: "ej. TypeScript, React, Node.js"
-
   - type: checkboxes
     id: requirements
     attributes:
@@ -62,8 +55,6 @@ body:
         - label: El proyecto es de código abierto (open source)
           required: true
         - label: El repositorio es público en GitHub
-          required: true
-        - label: El proyecto está creado o mantenido por desarrolladores peruanos
           required: true
         - label: El proyecto tiene un README.md descriptivo
           required: true

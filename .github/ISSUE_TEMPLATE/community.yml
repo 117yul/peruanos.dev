@@ -113,7 +113,7 @@ body:
       options:
         - label: He verificado que la comunidad no esté duplicada
           required: true
-        - label: El logo es de buena calidad y tiene formato web
+        - label: El logo es de buena calidad y tiene formato SVG o PNG
           required: true
         - label: La información proporcionada es correcta
           required: true
