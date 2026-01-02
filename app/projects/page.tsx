@@ -33,7 +33,7 @@ export default function Projects() {
                 </p>
                 <Link
                     className="px-6 py-3 text-center bg-[var(--color-primary)] text-white rounded-full hover:bg-[var(--color-primary-hover)] transition mb-8"
-                    href='https://github.com/lperezp/peruanos.dev/pulls'
+                    href='https://github.com/lperezp/peruanos.dev/compare?expand=1&template=project.md'
                     target='_blank'
                     rel="noopener noreferrer"
                 >

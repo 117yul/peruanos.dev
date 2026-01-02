@@ -47,7 +47,7 @@ export default function EventFilters({
                     placeholder="Buscar eventos..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full p-3 rounded-md border border-[var(--color-border)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
+                    className="w-full h-[46px] px-3 rounded-md border border-[var(--color-border)] bg-[var(--color-background)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 />
             </div>
 

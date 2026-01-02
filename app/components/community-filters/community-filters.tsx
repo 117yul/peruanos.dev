@@ -37,7 +37,7 @@ export default function CommunityFilters({
                     placeholder="Buscar comunidades..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full sm:w-1/2 px-4 py-2 border border-[var(--color-border)] rounded-lg bg-[var(--color-background)] text-[var(--color-foreground)]"
+                    className="w-full sm:w-1/2 h-[46px] px-3 border border-[var(--color-border)] rounded-md bg-[var(--color-background)] text-[var(--color-foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 />
                 <div className="w-full sm:w-1/4">
                     <FilterDropdown
