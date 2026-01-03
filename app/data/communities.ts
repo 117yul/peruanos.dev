@@ -7,8 +7,7 @@ export const COMMUNITIES: ICommunity[] = [
         "logo_url": "https://ngconf-peru.web.app/icons/logo_AngularPeru.svg",
         "city": "Lima",
         "topics": [
-            "Flutter",
-            "Mobile Development",
+            "Angular",
             "Google Technologies"
         ],
         "contact": {
@@ -19,29 +18,6 @@ export const COMMUNITIES: ICommunity[] = [
                 "twitter": "https://x.com/angularperung/",
                 "linkedin": "https://www.linkedin.com/company/angular-community-peru/",
                 "discord": "https://www.youtube.com/@AngularPeru/"
-            }
-        }
-    },
-    {
-        "name": "Google Developers Group Callao",
-        "description": "Google Developers Groups Callao es una iniciativa para concentrar los esfuerzos de muchos desarrolladores en el Callao y sus alrededores para aprender, compartir y ser productivos utilizando los diversos productos de Google.",
-        "logo_url": "https://gdgcallao.dev/assets/icons/ic_gdgcallao_black.svg",
-        "city": "Callao",
-        "topics": [
-            "Angular",
-            "Firebase",
-            "Cloud",
-            "Flutter",
-            "Google Technologies"
-        ],
-        "contact": {
-            "email": "developer.group.callao@gmail.com",
-            "website": "https://gdgcallao.dev/",
-            "socialMedia": {
-                "github": "https://github.com/GDGCallao/",
-                "twitter": "https://x.com/GDG_Callao/",
-                "linkedin": "https://www.linkedin.com/company/google-developer-groups-callao/",
-                "discord": "https://www.youtube.com/@GDG_Callao/"
             }
         }
     }
