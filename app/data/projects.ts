@@ -6,11 +6,7 @@ export const PROJECTS: IProject[] = [
         repo: 'peruanos.dev'
     },
     {
-        owner: 'pulumi',
-        repo: 'pulumi-go-provider'
-    },
-    {
-        owner: 'AngularPeru',
-        repo: 'demo-husky-prettier-eslint'
+        owner: 'lperezp',
+        repo: 'ngx-culqi'
     }
 ];
