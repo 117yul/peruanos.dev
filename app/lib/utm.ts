@@ -18,9 +18,9 @@ export function addUTMParams(
 
         // Parámetros UTM por defecto
         const defaultParams = {
-            source: 'website',
-            medium: 'card',
-            campaign: 'peruanos.dev',
+            source: 'peruanos.dev',
+            medium: 'website',
+            campaign: 'cards',
             id: 'peruanos.dev'
         };
 
