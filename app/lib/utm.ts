@@ -20,8 +20,7 @@ export function addUTMParams(
         const defaultParams = {
             source: 'peruanos.dev',
             medium: 'website',
-            campaign: 'cards',
-            id: 'peruanos.dev'
+            campaign: 'content_discovery',
         };
 
         // Combinar parámetros por defecto con los personalizados
@@ -31,7 +30,6 @@ export function addUTMParams(
         urlObj.searchParams.set('utm_source', utmParams.source);
         urlObj.searchParams.set('utm_medium', utmParams.medium);
         urlObj.searchParams.set('utm_campaign', utmParams.campaign);
-        urlObj.searchParams.set('utm_id', utmParams.id);
 
         return urlObj.toString();
     } catch (error) {
